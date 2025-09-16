@@ -19,6 +19,7 @@
                         <a href="{{ route('admin.contents.create') }}" class="btn btn-success">
                             <i class="bi bi-plus-circle me-2"></i>Upload Konten
                         </a>
+                        <!-- Removed Upload Keagamaan button completely as per user request -->
                         <div class="current-time">
                             <span id="current-time" class="h4"></span>
                             <small class="text-muted d-block">{{ now()->format('l, d F Y') }}</small>

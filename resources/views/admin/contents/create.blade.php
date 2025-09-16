@@ -37,6 +37,7 @@
                 <option value="puisi_cilik" {{ old('type') == 'puisi_cilik' ? 'selected' : '' }}>"Puisi Cilik"</option>
                 <option value="baca_yuk" {{ old('type') == 'baca_yuk' ? 'selected' : '' }}>"Baca Yuk!"</option>
                 <option value="kata_baru" {{ old('type') == 'kata_baru' ? 'selected' : '' }}>"Kata Baru"</option>
+                <option value="keagamaan" {{ old('type') == 'keagamaan' ? 'selected' : '' }}>"Keagamaan"</option>
                 <option value="angka_ajaib" {{ old('type') == 'angka_ajaib' ? 'selected' : '' }}>"Angka Ajaib"</option>
                 <option value="bermain_hitung" {{ old('type') == 'bermain_hitung' ? 'selected' : '' }}>"Bermain Hitung"</option>
                 <option value="cerita_matematika" {{ old('type') == 'cerita_matematika' ? 'selected' : '' }}>"Cerita Matematika"</option>
@@ -47,6 +48,7 @@
                 <option value="teka_teki_seru" {{ old('type') == 'teka_teki_seru' ? 'selected' : '' }}>"Teka-teki Seru"</option>
                 <option value="komik_edukasi" {{ old('type') == 'komik_edukasi' ? 'selected' : '' }}>"Komik Edukasi"</option>
                 <option value="fun_facts" {{ old('type') == 'fun_facts' ? 'selected' : '' }}>"Fun Facts"</option>
+                <option value="profile" {{ old('type') == 'profile' ? 'selected' : '' }}>"Profil"</option>
             </select>
             @error('type')
                 <div class="text-danger">{{ $message }}</div>

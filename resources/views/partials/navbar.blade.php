@@ -2,7 +2,7 @@
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="{{ url('/user-landing') }}">
             <img src="{{ asset('css/logo.jpg') }}" alt="Logo" style="height: 30px; width: auto; margin-right: 8px;">
-            <span class="fw-bold text-primary">PELITA KALIMENDONG</span>
+            <span class="fw-bold text-primary">SUARA PEGUNUNGAN</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -62,6 +62,7 @@
                                 <li><a class="dropdown-item" href="{{ route('literasi.kata-baru') }}"><i class="bi bi-chat-quote me-2"></i>Kata Baru</a></li>
                                 <li><a class="dropdown-item" href="{{ route('literasi.olahraga') }}"><i class="bi bi-basket3 me-2"></i>Olahraga</a></li>
                                 <li><a class="dropdown-item" href="{{ route('literasi.ekstrakulikuler') }}"><i class="bi bi-people me-2"></i>Ekstrakulikuler</a></li>
+                                <li><a class="dropdown-item" href="{{ route('literasi.keagamaan') }}"><i class="bi bi-journal-text me-2"></i>Keagamaan</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown d-none d-lg-block">
@@ -147,6 +148,7 @@
                                 <li><a class="dropdown-item" href="{{ route('literasi.kata-baru') }}"><i class="bi bi-chat-quote me-2"></i>Kata Baru</a></li>
                                 <li><a class="dropdown-item" href="{{ route('literasi.olahraga') }}"><i class="bi bi-basket3 me-2"></i>Olahraga</a></li>
                                 <li><a class="dropdown-item" href="{{ route('literasi.ekstrakulikuler') }}"><i class="bi bi-people me-2"></i>Ekstrakulikuler</a></li>
+                                <li><a class="dropdown-item" href="{{ route('literasi.keagamaan') }}"><i class="bi bi-journal-text me-2"></i>Keagamaan</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown d-none d-lg-block">

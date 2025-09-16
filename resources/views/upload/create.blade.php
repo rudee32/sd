@@ -54,6 +54,7 @@
                                     <option value="puisi_cilik" {{ old('type') == 'puisi_cilik' ? 'selected' : '' }}>💕 Puisi Cilik</option>
                                     <option value="baca_yuk" {{ old('type') == 'baca_yuk' ? 'selected' : '' }}>👀 Baca Yuk!</option>
                                     <option value="kata_baru" {{ old('type') == 'kata_baru' ? 'selected' : '' }}>💬 Kata Baru</option>
+                                    <option value="keagamaan" {{ old('type') == 'keagamaan' ? 'selected' : '' }}>🙏 Keagamaan</option>
                                     <option value="olahraga" {{ old('type') == 'olahraga' ? 'selected' : '' }}>🏀 Olahraga</option>
                                     <option value="ekstrakulikuler" {{ old('type') == 'ekstrakulikuler' ? 'selected' : '' }}>👥 Ekstrakulikuler</option>
                                 </optgroup>

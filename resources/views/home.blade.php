@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Beranda - PELITA KALIMENDONG')
+@section('title', 'Beranda - SUARA PEGUNUNGAN')
 
 @section('content')
 <div class="container-fluid p-0">
@@ -12,7 +12,7 @@
     <div class="row align-items-center">
         <div class="col-lg-6">
             <h1 class="display-4 fw-bold mb-4">
-                Selamat Datang di <span class="text-warning">PELITA KALIMENDONG</span>
+                Selamat Datang di <span class="text-warning">SUARA PEGUNUNGAN</span>
             </h1>
             <h2 class="h4 mb-4">SD N 2 Kalimendong</h2>
             <p class="lead mb-4">

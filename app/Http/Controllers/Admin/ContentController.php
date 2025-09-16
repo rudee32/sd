@@ -115,9 +115,81 @@ class ContentController extends Controller
     //     return view('admin.contents.index', compact('contents'));
     // }
 
-    // public function ekstrakulikuler()
-    // {
-    //     $contents = Content::where('type', 'ekstrakulikuler')->get();
-    //     return view('admin.contents.index', compact('contents'));
-    // }
+    public function edit(Content $content)
+    {
+        return view('admin.contents.edit', compact('content'));
+    }
+
+    public function update(Request $request, Content $content)
+    {
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'description' => 'required|string',
+            'type' => 'required|string',
+            'file' => 'nullable|file|mimes:pdf,doc,docx,txt|max:10240', // 10MB max
+            'cover_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5120', // 5MB max
+            'is_menu_feature' => 'nullable|boolean',
+        ]);
+
+        $data = [
+            'title' => $request->title,
+            'description' => $request->description,
+            'type' => $request->type,
+            'is_menu_feature' => $request->has('is_menu_feature'),
+        ];
+
+        // Handle file upload
+        if ($request->hasFile('file')) {
+            if ($content->file_path) {
+                Storage::disk('public')->delete($content->file_path);
+            }
+            $file = $request->file('file');
+            $fileName = time() . '_' . $file->getClientOriginalName();
+            $filePath = $file->storeAs('contents/files', $fileName, 'public');
+            $data['file_path'] = $filePath;
+        }
+
+        // Handle cover image upload
+        if ($request->hasFile('cover_image')) {
+            if ($content->cover_image) {
+                Storage::disk('public')->delete($content->cover_image);
+            }
+            $image = $request->file('cover_image');
+            $imageName = time() . '_' . $image->getClientOriginalName();
+            $imagePath = $image->storeAs('contents/images', $imageName, 'public');
+            $data['cover_image'] = $imagePath;
+        }
+
+        $content->update($data);
+
+        return redirect()->route('admin.contents.index')
+            ->with('success', 'Konten berhasil diperbarui!');
+    }
+
+    public function show(Content $content)
+    {
+        return view('admin.contents.show', compact('content'));
+    }
+
+    public function destroy(Content $content)
+    {
+        try {
+            // Delete associated files if they exist
+            if ($content->file_path) {
+                Storage::disk('public')->delete($content->file_path);
+            }
+            if ($content->cover_image) {
+                Storage::disk('public')->delete($content->cover_image);
+            }
+
+            $content->delete();
+
+            return redirect()->route('admin.contents.index')
+                ->with('success', 'Konten berhasil dihapus!');
+        } catch (\Exception $e) {
+            \Log::error('Error deleting content: ' . $e->getMessage());
+            return redirect()->route('admin.contents.index')
+                ->with('error', 'Terjadi kesalahan saat menghapus konten.');
+        }
+    }
 }

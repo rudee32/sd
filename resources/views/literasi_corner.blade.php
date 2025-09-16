@@ -105,6 +105,19 @@
                     </div>
                 </a>
             </div>
+            <div class="col-lg-4 col-md-6">
+                <a href="{{ route('literasi.keagamaan') }}" class="text-decoration-none">
+                    <div class="card border-0 shadow-lg h-100 content-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="bg-warning bg-gradient rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                                <i class="bi bi-journal-text text-white" style="font-size: 2rem;"></i>
+                            </div>
+                            <h5 class="fw-bold text-dark mb-2">Keagamaan</h5>
+                            <p class="text-muted mb-0">Konten keagamaan dan spiritual untuk meningkatkan nilai-nilai keimanan dan moral anak-anak</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <!-- Content Display -->

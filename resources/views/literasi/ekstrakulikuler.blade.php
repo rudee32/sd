@@ -6,6 +6,8 @@
 <div class="container my-5">
     <h1 class="mb-4"><i class="bi bi-people"></i> Ekstrakulikuler</h1>
 
+    <a href="{{ route('literasi-corner') }}" class="btn btn-secondary btn-sm mb-3">Kembali ke Literasi Corner</a>
+
     @if($contents->count() > 0)
         <div class="row row-cols-1 row-cols-md-3 g-4">
             @foreach($contents as $content)

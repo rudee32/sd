@@ -32,10 +32,17 @@ Route::get('/agenda', [HomeController::class, 'agenda'])->name('agenda');
 Route::get('/galeri', [App\Http\Controllers\GalleryController::class, 'index'])->name('gallery.index');
 Route::get('/berita/kategori/{category}', [HomeController::class, 'beritaKategori'])->name('news.category');
 
+// Profile Routes
+Route::middleware('auth')->group(function () {
+    Route::get('/profile/edit', [App\Http\Controllers\ProfileController::class, 'edit'])->name('profile.edit');
+    Route::put('/profile/update', [App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+});
+
 Route::prefix('admin')->name('admin.')->middleware(['auth', 'admin'])->group(function () {
     Route::resource('menu_features', MenuFeatureController::class);
 });
 Route::get('/literasi-corner', [HomeController::class, 'literasiCorner'])->name('literasi-corner');
+
 
 Route::get('/literasi-corner/cerita-seru', [HomeController::class, 'literasiCeritaSeru'])->name('literasi.cerita-seru');
 Route::get('/literasi-corner/puisi-cilik', [HomeController::class, 'literasiPuisiCilik'])->name('literasi.puisi-cilik');
@@ -43,6 +50,7 @@ Route::get('/literasi-corner/baca-yuk', [HomeController::class, 'literasiBacaYuk
 Route::get('/literasi-corner/kata-baru', [HomeController::class, 'literasiKataBaru'])->name('literasi.kata-baru');
 Route::get('/literasi-corner/olahraga', [HomeController::class, 'literasiOlahraga'])->name('literasi.olahraga');
 Route::get('/literasi-corner/ekstrakulikuler', [HomeController::class, 'literasiEkstrakulikuler'])->name('literasi.ekstrakulikuler');
+Route::get('/literasi-corner/keagamaan', [HomeController::class, 'literasiKeagamaan'])->name('literasi.keagamaan');
 Route::get('/numerasi-zone', [HomeController::class, 'numerasiZone'])->name('numerasi-zone');
 
 Route::get('/numerasi-zone/angka-ajaib', [HomeController::class, 'numerasiAngkaAjaib'])->name('numerasi.angka-ajaib');

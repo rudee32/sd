@@ -176,7 +176,7 @@ class HomeController extends Controller
 
     public function literasiCorner()
     {
-        $types = ['cerita_seru', 'puisi_cilik', 'baca_yuk', 'kata_baru', 'olahraga', 'ekstrakulikuler'];
+        $types = ['cerita_seru', 'puisi_cilik', 'baca_yuk', 'kata_baru', 'olahraga', 'ekstrakulikuler', 'keagamaan'];
         $query = Content::whereIn('type', $types)->with('comments');
         if (\Schema::hasColumn('contents', 'status')) {
             $query->where('status', 'approved');
@@ -441,6 +441,18 @@ class HomeController extends Controller
         }
         $contents = $query->latest()->paginate(10);
         return view('literasi.ekstrakulikuler', compact('contents'));
+    }
+
+    public function literasiKeagamaan()
+    {
+        $query = Content::where('type', 'keagamaan')->with('comments');
+        if (\Schema::hasColumn('contents', 'status')) {
+            $query->where('status', 'approved');
+        } elseif (\Schema::hasColumn('contents', 'published_at')) {
+            $query->whereNotNull('published_at');
+        }
+        $contents = $query->latest()->paginate(10);
+        return view('literasi.keagamaan', compact('contents'));
     }
 
     public function editorial()
