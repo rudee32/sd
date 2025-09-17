@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Beranda - SUARA PEGUNUNGAN')
+@section('title', 'Beranda - PELITA KALIMENDONG')
 
 @section('content')
 <div class="container-fluid p-0">
@@ -12,7 +12,7 @@
     <div class="row align-items-center">
         <div class="col-lg-6">
             <h1 class="display-4 fw-bold mb-4">
-                Selamat Datang di <span class="text-warning">SUARA PEGUNUNGAN</span>
+                Selamat Datang di <span class="text-warning">PELITA KALIMENDONG</span>
             </h1>
             <h2 class="h4 mb-4">SD N 2 Kalimendong</h2>
             <p class="lead mb-4">
@@ -29,7 +29,7 @@
         </div>
         <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="text-center">
-                <img src="{{ asset('css/sd1.jpg') }}" class="img-fluid rounded shadow" alt="SD Pelita Kalimendong" style="max-height: 300px;">
+                <img src="{{ asset('css/sd1.jpg') }}" class="img-fluid rounded shadow" alt="SD N 2 Kalimendong" style="max-height: 300px;">
             </div>
         </div>
     </div>

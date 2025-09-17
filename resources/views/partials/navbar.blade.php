@@ -2,7 +2,7 @@
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="{{ url('/user-landing') }}">
             <img src="{{ asset('css/logo.jpg') }}" alt="Logo" style="height: 30px; width: auto; margin-right: 8px;">
-            <span class="fw-bold text-primary">SUARA PEGUNUNGAN</span>
+            <span class="fw-bold text-primary">PELITA KALIMENDONG</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

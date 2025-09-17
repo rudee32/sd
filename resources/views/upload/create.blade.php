@@ -87,9 +87,9 @@
                         </div>
 
                         <div class="mb-3" id="file-upload-group">
-                            <label for="file" class="form-label">File Konten <span class="text-danger" id="file-required-indicator">*</span></label>
+                            <label for="file" class="form-label">File Konten</label>
                             <input type="file" class="form-control @error('file') is-invalid @enderror"
-                                   id="file" name="file" accept=".pdf,.doc,.docx" required>
+                                   id="file" name="file" accept=".pdf,.doc,.docx">
                             <div class="form-text">Format yang didukung: PDF, DOC, DOCX. Maksimal 10MB.</div>
                             @error('file')
                                 <div class="invalid-feedback">{{ $message }}</div>
@@ -141,29 +141,4 @@
         </div>
     </div>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const typeSelect = document.getElementById('type');
-        const fileInput = document.getElementById('file');
-        const fileRequiredIndicator = document.getElementById('file-required-indicator');
-
-        function toggleFileRequired() {
-            const selectedType = typeSelect.value;
-            // Types that don't require files (activity-based content)
-            const noFileRequired = ['olahraga', 'ekstrakulikuler'];
-
-            if (noFileRequired.includes(selectedType)) {
-                fileInput.removeAttribute('required');
-                fileRequiredIndicator.style.display = 'none';
-            } else {
-                fileInput.setAttribute('required', 'required');
-                fileRequiredIndicator.style.display = 'inline';
-            }
-        }
-
-        typeSelect.addEventListener('change', toggleFileRequired);
-        toggleFileRequired(); // Initial call on page load
-    });
-</script>
 @endsection

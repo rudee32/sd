@@ -21,16 +21,10 @@ class UserUploadController extends Controller
             'description' => 'required|string',
             'type' => 'required|in:majalah,poetry,editorial,news,agenda,cerita_seru,puisi_cilik,baca_yuk,kata_baru,angka_ajaib,bermain_hitung,cerita_matematika,tips_hitung_cepat,karya_kita,bintang_minggu_ini,foto_kegiatan,teka_teki_seru,komik_edukasi,fun_facts,olahraga,ekstrakulikuler,magazine',
             'cover_image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'file' => 'nullable|file|mimes:pdf,doc,docx|max:10240',
             'uploader_name' => 'required|string|max:255',
             'uploader_email' => 'required|email|max:255',
         ];
-
-        // Make file required only for types other than olahraga and ekstrakulikuler
-        if (!in_array($request->input('type'), ['olahraga', 'ekstrakulikuler'])) {
-            $rules['file'] = 'required|file|mimes:pdf,doc,docx|max:10240';
-        } else {
-            $rules['file'] = 'nullable|file|mimes:pdf,doc,docx|max:10240';
-        }
 
         $request->validate($rules);
 

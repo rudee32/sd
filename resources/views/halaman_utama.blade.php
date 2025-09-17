@@ -37,7 +37,7 @@
         Assalamu'alaikum Warahmatullahi Wabarakatuh,<br>
         Salam sejahtera untuk kita semua,<br><br>
 
-        Dengan penuh rasa syukur kepada Allah SWT, kami dengan bangga mempersembahkan <em>Majalah Mingguan Digital [Nama Sekolah]</em> sebagai wadah komunikasi, informasi, dan inspirasi bagi seluruh keluarga besar sekolah kita.<br><br>
+        Dengan penuh rasa syukur kepada Allah SWT, kami dengan bangga mempersembahkan <em>Majalah Mingguan Digital SD N 2 Kalimendong</em> sebagai wadah komunikasi, informasi, dan inspirasi bagi seluruh keluarga besar sekolah kita.<br><br>
         Tujuan dan Manfaat<br>
         Majalah mingguan digital ini memiliki beberapa tujuan utama:<br>
         <ol>

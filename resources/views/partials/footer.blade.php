@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h5>SD PELITA KALIMENDONG</h5>
+                <h5>SD N 2 KALIMENDONG</h5>
                 <p class="mb-0">Portal digital untuk pendidikan literasi dan numerasi yang menyenangkan dan interaktif.</p>
             </div>
             <div class="col-md-6 text-md-end">
