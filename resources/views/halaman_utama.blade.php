@@ -73,16 +73,17 @@
         - Platform yang mendorong inovasi dan kreativitas<br>
         - Dokumentasi perjalanan sekolah yang berharga<br><br>
         Semoga dengan rahmat Allah SWT, majalah mingguan digital ini dapat memberikan manfaat yang besar bagi kemajuan pendidikan di sekolah kita dan menjadi bagian penting dalam membentuk generasi yang cerdas, berkarakter, dan siap menghadapi tantangan masa depan.<br><br>
-        Penutup<br>
-        Terima kasih kepada seluruh tim redaksi, guru pembimbing, dan semua pihak yang telah bekerja keras mewujudkan majalah digital ini. Mari kita dukung bersama dan jadikan publikasi ini sebagai kebanggaan sekolah kita.<br><br>
-        Selamat membaca, semoga bermanfaat!<br><br>
-    
 
         Tri Suryati S.Pd.SD<br>
         Kepala Sekolah SD N 2 Kalimendong  <br>
         1 Oktober 2025<br><br>
 
         "Pendidikan adalah senjata paling ampuh yang dapat Anda gunakan untuk mengubah dunia" - Nelson Mandela
+      
+        Penutup<br>
+        Terima kasih kepada seluruh tim redaksi, guru pembimbing, dan semua pihak yang telah bekerja keras mewujudkan majalah digital ini. Mari kita dukung bersama dan jadikan publikasi ini sebagai kebanggaan sekolah kita.<br><br>
+        Selamat membaca, semoga bermanfaat!<br><br>
+    
     </p>
 </div>
 
@@ -136,7 +137,7 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Triyunitasari,S.Pd.</h5>
-                        <p class="card-text text-muted">Pimpinan redaksi</p>
+                        <p class="card-text text-muted">Admin</p>
                     </div>
                 </div>
             </div>
@@ -171,6 +172,42 @@
                         <h5 class="card-title">Sari Utami Pagastuti,S.Pd</h5>
                         <p class="card-text text-muted">Layout / artistik</p>
                     </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm text-center team-card">
+                    <div class="card-img-container">
+                        <img src="css/Haryati.jpg" class="card-img-top rounded-circle" alt="Triyunitasari" style="width: 150px; height: 150px; object-fit: cover; margin: 0 auto;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Haryati S.Pd.SD</h5>
+                        <p class="card-text text-muted">Penulis</p>
+                    </div>
+                     </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm text-center team-card">
+                    <div class="card-img-container">
+                        <img src="css/erlis_kurniawati.jpg" class="card-img-top rounded-circle" alt="Triyunitasari" style="width: 150px; height: 150px; object-fit: cover; margin: 0 auto;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Erlis Kurniawati S.Pd.I</h5>
+                        <p class="card-text text-muted">Pimpinan redaksi</p>
+                    </div>
+                     </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm text-center team-card">
+                    <div class="card-img-container">
+                        <img src="css/anggi_aji.jpg" class="card-img-top rounded-circle" alt="Triyunitasari" style="width: 150px; height: 150px; object-fit: cover; margin: 0 auto;">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Anggi Aji Nugroho</h5>
+                        <p class="card-text text-muted">Fotografer</p>
+                    </div>
+                </div>
+                </div>
+                </div>
                 </div>
             </div>
         </div>
